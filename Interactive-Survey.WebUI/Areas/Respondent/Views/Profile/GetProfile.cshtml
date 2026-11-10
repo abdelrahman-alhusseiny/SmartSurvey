@@ -44,7 +44,7 @@
 		<div class="card-footer text-end">
 			<form asp-area="Identity" asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
 				@Html.AntiForgeryToken()
-				<button type="submit" class="btn btn-primary">
+				<button type="submit" class="btn text-light btn-primary">
 					<i class="bi bi-box-arrow-right"></i> Logout
 				</button>
 			</form>
@@ -53,7 +53,7 @@
 				<i class="bi bi-pencil-square"></i> Edit Profile
 			</a>
 			<a asp-area="Respondent" asp-controller="Profile" asp-action="ChangeAccountPassword"
-			   class="btn btn-primary me-2">
+			   class="btn text-light btn-primary me-2">
 				<i class="bi bi-key"></i> Change Password
 			</a>
 			<a asp-area="Respondent" asp-controller="Profile" asp-action="DeleteAccount"
